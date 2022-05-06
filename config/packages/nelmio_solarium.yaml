@@ -1,0 +1,23 @@
+nelmio_solarium:
+    endpoints:
+        default:
+            scheme: http
+            host: '%env(SOLR_HOST)%'
+            port: '%env(SOLR_PORT)%'
+#            path: '%env(SOLR_PATH)%'
+            core: '%env(SOLR_CORE)%'
+    clients:
+        default:
+            endpoints: [default]
+
+#nelmio_solarium:
+#    clients:
+#        default:
+#            host: '%env(SOLR_HOST)%'
+#            port: '%env(SOLR_PORT)%'
+#            path: '%env(SOLR_PATH)%'
+#            core: '%env(SOLR_CORE)%'
+#  !    Unrecognized options "host, port, path, core" under "nelmio_solarium.client
+#    !!    s.default". Available options are "adapter_class", "adapter_service", "adap
+#    !!    ter_timeout", "client_class", "default_endpoint", "endpoints", "load_balanc
+#    !!    er", "plugins".

@@ -236,6 +236,15 @@
             "config/packages/nelmio_security.yaml"
         ]
     },
+    "nelmio/solarium-bundle": {
+        "version": "2.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.4",
+            "ref": "dd8a4574b91d26fb70f10efe395c6d4e655bdf71"
+        }
+    },
     "nikic/php-parser": {
         "version": "v4.10.2"
     },
@@ -244,6 +253,9 @@
     },
     "pagerfanta/doctrine-orm-adapter": {
         "version": "v3.1.0"
+    },
+    "pagerfanta/solarium-adapter": {
+        "version": "v3.3.0"
     },
     "pagerfanta/twig": {
         "version": "v3.1.0"
@@ -430,6 +442,9 @@
         "files": [
             "config/packages/snc_redis.yaml"
         ]
+    },
+    "solarium/solarium": {
+        "version": "6.1.5"
     },
     "spomky-labs/otphp": {
         "version": "v10.0.1"
