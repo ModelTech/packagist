@@ -572,7 +572,7 @@ class SymlinkDumper
     {
         // sort all versions and packages to make sha1 consistent
         ksort($this->rootFile['packages']);
-        ksort($this->rootFile['provider-includes']);
+        isset($this->rootFile['provider-includes']) && ksort($this->rootFile['provider-includes']);
         foreach ($this->rootFile['packages'] as $package => $versions) {
             ksort($this->rootFile['packages'][$package]);
         }

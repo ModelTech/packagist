@@ -38,6 +38,13 @@ var search = instantsearch({
     appId: algoliaConfig.app_id,
     apiKey: algoliaConfig.search_key,
     indexName: algoliaConfig.index_name,
+    createAlgoliaClient:function(algoliasearch, appId, apiKey){
+        return algoliasearch(appId, apiKey, {
+            protocol: algoliaConfig.protocol||'https:',
+            hosts: [
+                algoliaConfig.host
+            ]});
+    },
     routing: {
         stateMapping: {
             stateToRoute: function (uiState) {

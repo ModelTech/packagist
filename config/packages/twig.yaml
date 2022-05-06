@@ -12,6 +12,8 @@ twig:
           app_id: '%env(ALGOLIA_APP_ID)%'
           search_key: '%env(ALGOLIA_SEARCH_KEY)%'
           index_name: '%env(ALGOLIA_INDEX_NAME)%'
+          host: '%env(ALGOLIA_HOST)%'
+          protocol: '%env(ALGOLIA_PROTOCOL)%'
 
 when@test:
     twig:

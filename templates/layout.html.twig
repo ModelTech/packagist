@@ -237,7 +237,9 @@
                 env: { DEBUG: undefined },
             };
         </script>
-        {% block script_init %}{% endblock %}
+    <script src="{{ asset('libs/instantsearch.js')}}"></script>
+
+    {% block script_init %}{% endblock %}
 
         <script nonce="{{ csp_nonce('script') }}" src="{{ asset('build/app.js') }}"></script>
 
