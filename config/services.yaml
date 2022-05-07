@@ -141,3 +141,4 @@ services:
     Symfony\Component\HttpClient\NoPrivateNetworkHttpClient: ~
     Nelmio\SolariumBundle\ClientRegistry:
         alias: solarium.client_registry
+    App\Search\Solr: ~
