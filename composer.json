@@ -46,7 +46,7 @@
         "nelmio/solarium-bundle": "^5.0",
         "pagerfanta/core": "^4.2",
         "pagerfanta/doctrine-orm-adapter": "^4.2",
-        "pagerfanta/solarium-adapter": "^3.3",
+        "pagerfanta/solarium-adapter": "^4.2",
         "pagerfanta/twig": "^4.2",
         "phpdocumentor/reflection-docblock": "^5.2",
         "predis/predis": "^2.0",
